@@ -14,7 +14,12 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <!-- navbar start-->
     <div class="navbar">
@@ -53,14 +58,156 @@
     <!-- navbar end -->
 
     <!-- product display / details start-->
-         <div class="product">
-            <div class="sidebar"></div>
-            <div class="main-product">
-                
+    <div class="product">
+        <!-- product sidebar -->
+        <div class="product-sidebar">
+            <h3><a href="./category.html"><i class="fa-solid fa-arrow-left-long"></i>BACK TO CATEGORIES</a></h3>
+            <h1>
+                Teixeira <br>
+                Adventure
+            </h1>
+            <h2>$125.5</h2>
+            <p>COLOR</p>
+            <div class="color-cont">
+                <div id="red" class="color"></div>
+                <div id="orange" class="color"></div>
+                <div id="black" class="color"></div>
+                <div id="green" class="color"></div>
             </div>
-         </div>
+            <p>SIZE</p>
+            <div class="size-cont">
+                <a href="#">S</a>
+                <a href="#">M</a>
+                <a href="#">L</a>
+                <a href="#">XL</a>
+            </div>
+            <div class="quantity-cont">
+                <a href="#">-</a>
+                <a href="#">1</a>
+                <a href="#">+</a>
+            </div>
+            <button><a href="#">ADD TO CART</a></button>
+            <div class="share">
+                <i class="fa-solid fa-share-nodes"></i>
+                <a href="#">SHARE THIS</a>
+            </div>
+        </div>
+        <!-- main product section -->
+        <div class="main-product">
+            <div class="product-items">
+                <h1>CABERG</h1>
+                <div class="prod-btn">
+                    <button id="images"><a href="#">IMAGES</a></button>
+                    <button id="details"><a href="#">DETAILS</a></button>
+                </div>
+                <div class="prd-img">
+                    <img src="./images/product-img1.png" alt="" srcset="">
+                </div>
+                <div class="details-contant">
+                    <div class="item-details">
+                        <h2>brand Name</h2>
+                        <h3>Caberg</h3>
+                    </div>
+                    <hr>
+                    <div class="item-details">
+                        <h2>types of helmet</h2>
+                        <h3>full face </h3>
+                    </div>
+                    <hr>
+                    <div class="item-details">
+                        <h2> features of a helmet</h2>
+                        <h3> reduces your risk of a serious brain injury and death</h3>
+                    </div>
+                    <hr>
+                    <div class="item-details">
+                        <h2>helmets shaped</h2>
+                        <h3>round oval, intermediate oval (the most common), and long oval</h3>
+                    </div>
+                    <hr>
+                    <div class="item-details">
+                        <h2>helmets made of?</h2>
+                        <h3>Modern helmets are made of lightweight and strong materials like carbon fiber, fiberglass,
+                            Kevlar, and composite materials.</h3>
+                    </div>
+                    <hr>
+                    <div class="item-details">
+                        <h2>the foam used in helmets?</h2>
+                        <h3>Expanded polystyrene (EPS) is a crushable foam, widely used in helmet liners (and other
+                            energy management applications like automobile bumpers). </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- product display / details end -->
 
-    
+    <!-- Footer start here -->
+    <div class="footer">
+        <!-- top footer start here -->
+        <div class="top-footer">
+            <div class="top1">
+                <h1>CATEGORIES</h1>
+                <div class="top-inner">
+                    <div class="topinner1">
+                        <a href="#">Fullface</a>
+                        <a href="#">modular</a>
+                        <a href="#">Half face helmet</a>
+                        <a href="#">helm multi model</a>
+                        <a href="#">helmet care</a>
+                    </div>
+                    <div class="topinner2">
+                        <a href="#">Visor</a>
+                        <a href="#">balaclava</a>
+                        <a href="#">intercom</a>
+                        <a href="#">pinlock (anti fog)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="top2">
+                <h1>Corporate Info</h1>
+                <a href="#">About us</a>
+                <a href="#">Careers</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="top3">
+                <h1>Custiomer service</h1>
+                <a href="#">Faq</a>
+                <a href="#">return</a>
+                <a href="#">delivery</a>
+                <a href="#">contact us</a>
+                <a href="#">order tracking</a>
+            </div>
+            <div class="top4">
+                <h1>Follow us </h1>
+                <div class="socal-links">
+                    <img src="./images/social-link-fb.png" alt="">
+                    <img src="./images/social-link-tw.png" alt="">
+                    <img src="./images/social-link-ins.png" alt="">
+                    <img src="./images/social-link-google.png" alt="">
+                    <img src="./images/social-link-yt.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- bottom footer strat -->
+        <div class="bottom-footer">
+            <img src="./images/EVNX..png" alt="" srcset="">
+            <p>Copyright © 2017 EVNX. Shopify TPowered by Shopify.</p>
+        </div>
+    </div>
+
+    <!-- jquery Codes -->
+    <script>
+        $(document).ready(function () {
+            $("#details").click(function () {
+                $(".details-contant").toggle()
+            });
+            $("#images").click(function () {
+                $(".details-contant").hide()
+            });
+
+        });
+    </script>
 </body>
+
 </html>
