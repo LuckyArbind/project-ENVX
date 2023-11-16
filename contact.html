@@ -21,7 +21,8 @@
 </head>
 
 <body>
-    <!-- navbar start-->
+
+    <!-- navbar start here -->
     <div class="navbar">
         <div class="logo">
             <img src="./images/EVNX..png" alt="" srcset="">
@@ -55,93 +56,45 @@
             <i class="fa-solid fa-user"></i>
         </div>
     </div>
-    <!-- navbar end -->
+    <!-- navbar end here -->
 
-    <!-- product display / details start-->
-    <div class="product">
-        <!-- product sidebar -->
-        <div class="product-sidebar">
-            <h3><a href="./category.html"><i class="fa-solid fa-arrow-left-long"></i>BACK TO CATEGORIES</a></h3>
+    <!-- contact main section -->
+    <div class="contact-container">
+        <div class="contact-sidebar">
             <h1>
-                Teixeira <br>
-                Adventure
+                get in touch with us to know how we can help
             </h1>
-            <h2>$125.5</h2>
-            <p>COLOR</p>
-            <div class="color-cont">
-                <div id="red" class="color"></div>
-                <div id="orange" class="color"></div>
-                <div id="black" class="color"></div>
-                <div id="green" class="color"></div>
-            </div>
-            <p>SIZE</p>
-            <div class="size-cont">
-                <a href="#">S</a>
-                <a href="#">M</a>
-                <a href="#">L</a>
-                <a href="#">XL</a>
-            </div>
-            <div class="quantity-cont">
-                <a href="#">-</a>
-                <a href="#">1</a>
-                <a href="#">+</a>
-            </div>
-            <button><a href="#">ADD TO CART</a></button>
-            <div class="share">
-                <i class="fa-solid fa-share-nodes"></i>
-                <a href="#">SHARE THIS</a>
-            </div>
+            <form action="#">
+                <input type="text" name="name" id="name" placeholder="NAME">
+                <input type="email" name="email" id="email" placeholder="EMAIL">
+                <input type="text" name="company" id="company" placeholder="COMPANY">
+                <textarea name="comment" id="comment" cols="30" rows="4">
+                    WRITE SOMETHING
+                </textarea>
+                <input type="submit" value="SEND" id="submit">
+            </form>
+            <p>OR CALL US AT <span>+123456879</span></p>
         </div>
-        <!-- main product section -->
-        <div class="main-product">
-            <div class="product-items">
-                <h1>CABERG</h1>
-                <div class="prod-btn">
-                    <button id="images"><a href="#">IMAGES</a></button>
-                    <button id="details"><a href="#">DETAILS</a></button>
-                </div>
-                <div class="prd-img">
-                    <img src="./images/product-img1.png" alt="" srcset="">
-                </div>
-                <div class="details-contant">
-                    <div class="item-details">
-                        <h2>brand Name</h2>
-                        <h3>Caberg</h3>
-                    </div>
-                    <hr>
-                    <div class="item-details">
-                        <h2>types of helmet</h2>
-                        <h3>full face </h3>
-                    </div>
-                    <hr>
-                    <div class="item-details">
-                        <h2> features of a helmet</h2>
-                        <h3> reduces your risk of a serious brain injury and death</h3>
-                    </div>
-                    <hr>
-                    <div class="item-details">
-                        <h2>helmets shaped</h2>
-                        <h3>round oval, intermediate oval (the most common), and long oval</h3>
-                    </div>
-                    <hr>
-                    <div class="item-details">
-                        <h2>helmets made of?</h2>
-                        <h3>Modern helmets are made of lightweight and strong materials like carbon fiber, fiberglass,
-                            Kevlar, and composite materials.</h3>
-                    </div>
-                    <hr>
-                    <div class="item-details">
-                        <h2>the foam used in helmets?</h2>
-                        <h3>Expanded polystyrene (EPS) is a crushable foam, widely used in helmet liners (and other
-                            energy management applications like automobile bumpers). </h3>
-                    </div>
-                </div>
-            </div>
+        <div class="contact-main">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58938.65400885276!2d88.44093116552273!3d22.591596692890967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02754a79bf63bf%3A0xbbbcc2e3c00e3980!2sNew%20Town%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1700117699495!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    <!-- product display / details end -->
+    <!-- contact main section end -->
 
-    <!-- Footer start here -->
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
     <div class="footer">
         <!-- top footer start here -->
         <div class="top-footer">
@@ -189,25 +142,15 @@
                 </div>
             </div>
         </div>
+
         <!-- bottom footer strat -->
         <div class="bottom-footer">
             <img src="./images/EVNX..png" alt="" srcset="">
             <p>Copyright © 2017 EVNX. Shopify TPowered by Shopify.</p>
         </div>
     </div>
+    <!-- footer -->
 
-    <!-- jquery Codes -->
-    <script>
-        $(document).ready(function () {
-            $("#details").click(function () {
-                $(".details-contant").toggle()
-            });
-            $("#images").click(function () {
-                $(".details-contant").hide()
-            });
-
-        });
-    </script>
 </body>
 
 </html>

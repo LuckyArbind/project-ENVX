@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,31 +27,31 @@
                 <img src="./images/EVNX..png" alt="" srcset="">
             </div>
             <div class="nav-links">
-                <a href="#">HOME</a>
+                <a href="./home.html">HOME</a>
                 <a href="#">BLOG</a>
                 <div class="dropdown">
                     <button class="dropbtn">CATEGORY <i class="fa-solid fa-caret-down"></i></button>
                     <div class="dropdown-content">
-                        <a class="drop-link" href="category.html"><img src="./images/dropdown img1.png" alt="" srcset="">FULL FACE
+                        <a class="drop-link" href="./category.html"><img src="./images/dropdown img1.png" alt="" srcset="">FULL FACE
                             HELMET</a>
                         <HR>
                         </HR>
-                        <a class="drop-link" href="category.html"><img src="./images/dropdown img2.png" alt="" srcset="">MODULER
+                        <a class="drop-link" href="./category.html"><img src="./images/dropdown img2.png" alt="" srcset="">MODULER
                             HELMET</a>
                         <HR>
                         </HR>
-                        <a class="drop-link" href="category.html"><img src="./images/dropdown img3.png" alt="" srcset="">HALF FACE
+                        <a class="drop-link" href="./category.html"><img src="./images/dropdown img3.png" alt="" srcset="">HALF FACE
                             HELMET</a>
                     </div>
                 </div>
-                <a href="#">CONTACT</a>
+                <a href="./contact.html">CONTACT</a>
             </div>
             <div class="search-profile">
                 <form action="#">
                     <input type="search" id="search" name="search" placeholder="SEARCH">
                     <input type="submit" id="submit">
                 </form>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 <i class="fa-solid fa-user"></i>
             </div>
         </div>
@@ -271,7 +273,24 @@
             <p>Copyright © 2017 EVNX. Shopify TPowered by Shopify.</p>
         </div>
     </div>
+     
 
+    <script>
+        jQuery(document).ready(function($) {
+  // Scroll to the desired section on click
+  // Make sure to add the `data-scroll` attribute to your `<a>` tag.
+  // Example: 
+  // `<a data-scroll href="#my-section">My Section</a>` will scroll to an element with the id of 'my-section'.
+  function scrollToSection(event) {
+    event.preventDefault();
+    var $section = $($(this).attr('href')); 
+    $('html, body').animate({
+      scrollTop: $section.offset().top
+    }, 500);
+  }
+  $('[data-scroll]').on('click', scrollToSection);
+}(jQuery));
+    </script>
 </body>
 
 </html>
